@@ -5,7 +5,7 @@ it is very basic containing only 2 buttons, one being a autofarm that works pret
 
 and the other is a useless credits button.
 
-this was a script i randomly threw together and though it was ok so i upload it here.
+this was a script i randomly threw together and thought it was ok so i upload it here.
 
 the autofarm can get u ez wins to flex on da n00bz!!1!!1
 
