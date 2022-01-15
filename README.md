@@ -1,5 +1,5 @@
 # Natural-Disaster-Survival-GUI
-Really basic nds script |  Script Version V1.0
+Really basic nds script |  Script Version V1.1
 
 it is very basic containing only 2 buttons, one being a autofarm that works pretty good
 
@@ -22,3 +22,9 @@ the blizzard or snow can kill you. If you find issues report to me on the issues
 * more functions
 
 End
+
+## Updates
+new things in v1.1
+
+* Added Anti afk
+* added new lines in credits.
