@@ -13,7 +13,7 @@ the autofarm can get u ez wins to flex on da n00bz!!1!!1
 
 Issues i have found: 
 
-the blizard or snow can kill you. IF you find issues report to me on the issues tab on github
+the blizzard or snow can kill you. If you find issues report to me on the issues tab on github
 
 ## Things that are going to be added
 
