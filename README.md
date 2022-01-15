@@ -28,3 +28,4 @@ new things in v1.1
 
 * Added Anti afk
 * added new lines in credits.
+* fixed the font for the buttons and text
