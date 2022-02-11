@@ -46,7 +46,7 @@ AutoFarm.TextWrapped = true
 AutoFarm.MouseButton1Down:connect(function()
 	while true do
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-265.430115, 179.497955, 340.779327, -0.936744332, -3.20583737e-08, 0.350014418, -5.13043616e-08, 1, -4.57143905e-08, -0.350014418, -6.07799606e-08, -0.936744332)
-		wait(1)
+		wait(0.2)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149.869171, 46.9979935, 7.83110905, 0.0143192178, 1.40906531e-08, 0.99989748, -3.43927198e-08, 1, -1.35995704e-08, -0.99989748, -3.4194457e-08, 0.0143192178)
 	end	
 end)
