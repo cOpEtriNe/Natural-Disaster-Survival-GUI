@@ -1,88 +1,146 @@
--- nds gui v1.1
+-- nds gui v1.2
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local AutoFarm = Instance.new("TextButton")
-local PrintCredits = Instance.new("TextButton")
-local AntiAFK = Instance.new("TextButton")
+local title = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Disable3D = Instance.new("TextButton")
+local afk = Instance.new("TextButton")
+local Farm = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
-Frame.Position = UDim2.new(0.155208334, 0, 0.317401916, 0)
-Frame.Size = UDim2.new(0, 303, 0, 259)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.195786864, 0, 0.620987654, 0)
+Frame.Size = UDim2.new(0, 301, 0, 279)
 Frame.Draggable = true
 Frame.Visible = true
 Frame.Active = true
 
 
-Title.Name = "Title"
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BorderSizePixel = 0
-Title.Size = UDim2.new(0, 303, 0, 50)
-Title.Font = Enum.Font.Oswald
-Title.Text = "NDS Gui V1.1"
-Title.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
+title.Name = "title"
+title.Parent = Frame
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0, 0, 0.0752688199, 0)
+title.Size = UDim2.new(0, 301, 0, 50)
+title.Font = Enum.Font.Ubuntu
+title.Text = "NDS Gui V1.2"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
 
-AutoFarm.Name = "AutoFarm"
-AutoFarm.Parent = Frame
-AutoFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarm.Position = UDim2.new(0.168316826, 0, 0.243243247, 0)
-AutoFarm.Size = UDim2.new(0, 200, 0, 50)
-AutoFarm.Font = Enum.Font.Oswald
-AutoFarm.Text = "Autofarm"
-AutoFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoFarm.TextScaled = true
-AutoFarm.TextSize = 14.000
-AutoFarm.TextWrapped = true
-AutoFarm.MouseButton1Down:connect(function()
-	while true do
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-265.430115, 179.497955, 340.779327, -0.936744332, -3.20583737e-08, 0.350014418, -5.13043616e-08, 1, -4.57143905e-08, -0.350014418, -6.07799606e-08, -0.936744332)
-		wait(0.2)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149.869171, 46.9979935, 7.83110905, 0.0143192178, 1.40906531e-08, 0.99989748, -3.43927198e-08, 1, -1.35995704e-08, -0.99989748, -3.4194457e-08, 0.0143192178)
-	end	
-end)
+UICorner.Parent = Frame
 
-PrintCredits.Name = "PrintCredits"
-PrintCredits.Parent = Frame
-PrintCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PrintCredits.Position = UDim2.new(0, 0, 0.903474867, 0)
-PrintCredits.Size = UDim2.new(0, 123, 0, 25)
-PrintCredits.Font = Enum.Font.Oswald
-PrintCredits.Text = "Credits (check console)"
-PrintCredits.TextColor3 = Color3.fromRGB(0, 0, 0)
-PrintCredits.TextScaled = true
-PrintCredits.TextSize = 14.000
-PrintCredits.TextWrapped = true
-PrintCredits.MouseButton1Down:connect(function()
-	print("\n natural disaster script made by cOpEtriNe, Verison V1.1 ")
-end)
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(65, 65, 65)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(65, 65, 65))}
+UIGradient.Parent = Frame
 
-AntiAFK.Name = "AntiAFK"
-AntiAFK.Parent = Frame
-AntiAFK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiAFK.Position = UDim2.new(0.168316826, 0, 0.555984557, 0)
-AntiAFK.Size = UDim2.new(0, 200, 0, 50)
-AntiAFK.Font = Enum.Font.Oswald
-AntiAFK.Text = "Anti AFK"
-AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAFK.TextScaled = true
-AntiAFK.TextSize = 14.000
-AntiAFK.TextWrapped = true
-AntiAFK.MouseButton1Down:connect(function()
-	local VirtualUser=game:service'VirtualUser'
-	game:service'Players'.LocalPlayer.Idled:connect(function()
-		VirtualUser:CaptureController()
-		VirtualUser:ClickButton2(Vector2.new())
+Disable3D.Name = "Disable3D"
+Disable3D.Parent = Frame
+Disable3D.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Disable3D.BackgroundTransparency = 0.900
+Disable3D.BorderSizePixel = 0
+Disable3D.Position = UDim2.new(0.166112959, 0, 0.745519698, 0)
+Disable3D.Size = UDim2.new(0, 200, 0, 50)
+Disable3D.Font = Enum.Font.SourceSans
+Disable3D.Text = "Disable 3D Rendering"
+Disable3D.TextColor3 = Color3.fromRGB(255, 255, 255)
+Disable3D.TextScaled = true
+Disable3D.TextSize = 14.000
+Disable3D.TextWrapped = true
+
+afk.Name = "afk"
+afk.Parent = Frame
+afk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+afk.BackgroundTransparency = 0.900
+afk.BorderSizePixel = 0
+afk.Position = UDim2.new(0.166112959, 0, 0.530465961, 0)
+afk.Size = UDim2.new(0, 200, 0, 50)
+afk.Font = Enum.Font.SourceSans
+afk.Text = "Anti AFK"
+afk.TextColor3 = Color3.fromRGB(255, 255, 255)
+afk.TextScaled = true
+afk.TextSize = 14.000
+afk.TextWrapped = true
+
+Farm.Name = "Farm"
+Farm.Parent = Frame
+Farm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farm.BackgroundTransparency = 0.900
+Farm.BorderSizePixel = 0
+Farm.Position = UDim2.new(0.166112959, 0, 0.322580636, 0)
+Farm.Size = UDim2.new(0, 200, 0, 50)
+Farm.Font = Enum.Font.SourceSans
+Farm.Text = "Autofarm"
+Farm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Farm.TextScaled = true
+Farm.TextSize = 14.000
+Farm.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.830564797, 0, 0, 0)
+Close.Size = UDim2.new(0, 47, 0, 21)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+-- Scripts:
+
+local function SYLZJZK_fake_script() -- Disable3D.LocalScript 
+	local script = Instance.new('LocalScript', Disable3D)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("RunService"):Set3dRenderingEnabled(false)
 	end)
+end
+coroutine.wrap(SYLZJZK_fake_script)()
+local function XRUHQSI_fake_script() -- afk.LocalScript 
+	local script = Instance.new('LocalScript', afk)
 
-	warn("Anti-Afk has Loaded")
-end)
+	script.Parent.MouseButton1Down:Connect(function()
+		local VirtualUser=game:service'VirtualUser'
+		game:service'Players'.LocalPlayer.Idled:connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	
+		warn("Anti-Afk has Loaded")
+	end)
+end
+coroutine.wrap(XRUHQSI_fake_script)()
+local function CFYCWL_fake_script() -- Farm.LocalScript 
+	local script = Instance.new('LocalScript', Farm)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-265.430115, 179.497955, 340.779327, -0.936744332, -3.20583737e-08, 0.350014418, -5.13043616e-08, 1, -4.57143905e-08, -0.350014418, -6.07799606e-08, -0.936744332)
+			wait(0.2)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149.869171, 46.9979935, 7.83110905, 0.0143192178, 1.40906531e-08, 0.99989748, -3.43927198e-08, 1, -1.35995704e-08, -0.99989748, -3.4194457e-08, 0.0143192178)
+		end)
+	end)
+end
+coroutine.wrap(CFYCWL_fake_script)()
+local function FEILYWN_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Frame:Destroy()
+	end)
+	
+end
+coroutine.wrap(FEILYWN_fake_script)()
