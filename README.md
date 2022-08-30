@@ -1,7 +1,7 @@
 # Natural-Disaster-Survival-GUI
 Really basic nds script |  Script Version V1.1
 
-it is very basic containing only 2 buttons, one being a autofarm that works pretty good
+it is very basic containing only 2 buttons, one being a autofarm that works ok.
 
 and the other is a useless credits button.
 
