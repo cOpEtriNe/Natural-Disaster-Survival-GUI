@@ -16,8 +16,7 @@ the blizzard or snow can kill you. If you find issues report to me on the issues
 ## Things that are going to be added
 
 * a way to not be seen by players in-game
-* better gui
-* more functions
+* more functions (Going to finish soon)
 
 End
 
