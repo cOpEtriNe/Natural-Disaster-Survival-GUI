@@ -1,9 +1,7 @@
 # Natural-Disaster-Survival-GUI
-Really basic nds script |  Script Version V1.1
+Really basic nds script |  Script Version V1.2
 
-it is very basic containing only 2 buttons, one being a autofarm that works ok.
-
-and the other is a useless credits button.
+it is very basic containing only 3 buttons, one being a autofarm that works ok.
 
 this was a script i randomly threw together and thought it was ok so i upload it here.
 
@@ -24,8 +22,9 @@ the blizzard or snow can kill you. If you find issues report to me on the issues
 End
 
 ## Updates
-new things in v1.1
+new things in v1.2
 
-* Added Anti afk
-* added new lines in credits.
-* fixed the font for the buttons and text
+* New UI 
+* Added close buttton 
+* Added 3d rendering disabler
+* Faster Autofarm
